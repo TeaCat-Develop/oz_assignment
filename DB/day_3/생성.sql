@@ -28,3 +28,6 @@ INSERT INTO employees(name, position , salary) VALUES ('지수', 'Frontend', 780
 INSERT INTO employees(name, position , salary) VALUES ('민혁', 'Frontend', 96000);
 -- 이름: 하온, 직책: Backend, 연봉: 130000
 INSERT INTO employees(name, position , salary) VALUES ('하온', 'Backend', 130000);
+
+SELECT * FROM oz_assignment.employees;
+
