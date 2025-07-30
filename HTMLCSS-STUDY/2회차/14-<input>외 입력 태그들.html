@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>범례:음료주문</legend>
+    <h4>음료를 고르세요</h4>
+    <select multiple size="2"> <!--multiple로 2개이상 가능. 컨트롤 누르고 누르면됨-->
+        <!--드롭다운 메뉴 만들기. value로 구분 selected로 디폴트옵션 선택-->
+        <option value="coffee">커피</option>
+        <option value="coke" selected>콜라</option>
+        <option value="juice">쥬스</option>
+    </select>
+    
+    <br>
+    <h2>기타 음료를 원한다면 자유롭게 입력 부탁드립니다.</h2>
+    <!-- <input>은 한 줄만 입력가능 -->
+    <!-- textareasms 가로,세로 열과 행 지정가능. 리사이징도 가능.-->
+     <textarea cols="55" rows="6"></textarea>
+    <br>
+    </fieldset>
+
+    <h2>우리의 준비 상태는...</h2>
+    <!-- 진척도 표시 입력은 아니지만 range와 형태 유사 -->
+     <progress value="80" max="100"></progress>
+    <br>
+     <input type="button" value="PUSH">
+     <br>
+     <button>PUSH</button>
+
+
+    
+</body>
+</html>
