@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자 정보 입력받고 출력하기</title>
+    <style>
+      #name {
+        color: darkslateblue;
+      }
+      #animal,
+      #fruit {
+        color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  1. 이름(h1)
+      2. 좋아하는 동물 (p)
+      3. 좋아하는 과일 (p)
+      입력은 모두 prompt(x)로 받는다.-->
+    <h1 id="name">이름</h1>
+    <p id="animal">좋아하는 동물</p>
+    <p id="fruit">좋아하는 과일</p>
+    <script>
+      const nameElement = document.querySelector("#name");
+      let name = prompt("whats your name");
+      nameElement.textContent = name;
+
+      const animalElement = document.querySelector("#animal");
+      let animal = prompt("whats your favorite animal");
+      animalElement.textContent = `좋아하는 동물은 ${animal}입니다!`;
+
+      const fruitElement = document.querySelector("#fruit");
+      let fruit = prompt("whats your favorite fruit");
+      fruitElement.textContent = `좋아하는 과일은 ${fruit}입니다!`;
+    </script>
+  </body>
+</html>
